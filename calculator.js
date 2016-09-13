@@ -6,7 +6,12 @@ var calculator = {
     return this.value;
   },
   add: function(b) {
-    this.value = this.value + b;
+    var s = 0;
+    for (var i = 0; i < arguments.length; i++) {
+      s += arguments[i];
+    }
+
+    this.value += s;
     return this.value;
   },
   subtract: function(b) {
