@@ -13,6 +13,7 @@ var calculator = {
 
     this.value += s;
     return this.value;
+    // found this solution here http://code-maven.com/javascript-function-that-accepts-any-number-of-arguments
   },
   subtract: function(b) {
     this.value = this.value - b;
